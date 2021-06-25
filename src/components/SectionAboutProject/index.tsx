@@ -15,13 +15,11 @@ const SectionAboutProject = ({ sectionAboutProject }: Props) => (
   <S.Wrapper>
     <Container>
       <S.Container>
-        <S.Image>
-          <img
-            src={getImageUrl(sectionAboutProject.image.url)}
-            loading="lazy"
-            alt={sectionAboutProject.image.url}
-          />
-        </S.Image>
+        <S.Image
+          src={getImageUrl(sectionAboutProject.image.url)}
+          loading="lazy"
+          alt={sectionAboutProject.image.url}
+        />
         <div>
           <Heading>{sectionAboutProject.title}</Heading>
           <S.Text
