@@ -120,6 +120,16 @@ export const GET_LANDING_PAGE = gql`
     }
   }
 
+  fragment sectionFaq on LandingPage {
+    sectionFaq {
+      title
+      questions {
+        question
+        answer
+      }
+    }
+  }
+
   query GET_LANDING_PAGE {
     landingPage {
       ...logo
@@ -132,6 +142,7 @@ export const GET_LANDING_PAGE = gql`
       ...pricingBox
       ...sectionABoutUS
       ...sectionReviews
+      ...sectionFaq
     }
   }
 `
