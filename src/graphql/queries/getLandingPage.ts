@@ -38,11 +38,20 @@ export const GET_LANDING_PAGE = gql`
     sectionTech {
       title
       techIcons {
-        name
         icon {
           name
           url
         }
+        name
+      }
+    }
+  }
+
+  fragment sectionConcepts on LandingPage {
+    sectionConcepts {
+      title
+      concepts {
+        title
       }
     }
   }
@@ -53,6 +62,7 @@ export const GET_LANDING_PAGE = gql`
       ...header
       ...sectionAboutProject
       ...sectionTech
+      ...sectionConcepts
     }
   }
 `
