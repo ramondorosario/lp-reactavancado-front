@@ -91,30 +91,6 @@ export const BenefitsList = styled.div`
   `}
 `
 
-// export const BenefitsItem = styled.li`
-//   ${({ theme }) => css`
-//     color: ${theme.colors.black};
-//     font-size: ${theme.font.sizes.small};
-//     position: relative;
-//     padding-left: ${theme.spacings.small};
-
-//     &::after {
-//       content: ' ';
-//       position: absolute;
-//       width: 0.9rem;
-//       height: 0.9rem;
-//       top: 0.9rem;
-//       left: 0rem;
-//       border-radius: 100%;
-//       background: ${theme.colors.secondary};
-//     }
-
-//     &:not(:last-child) {
-//       margin-bottom: ${theme.spacings.xsmall};
-//     }
-//   `}
-// `
-
 export const ButtonFullPrice = styled.span`
   ${({ theme }) => css`
     text-decoration: line-through;
